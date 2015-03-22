@@ -1,0 +1,48 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Weather App</title>
+</head>
+
+<body onload="clearAll();">
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1>Welcome to Weather Station App.</h1>
+            <img src="img/Weather-Header.jpg" id="imgs" />
+            <!--        Start of nav bar-->
+            <div data-role="navbar" data-iconpos="bottom">
+                <!--            adding options in Nav Bar-->
+                <ul>
+                    <li><a href="index.html" data-icon="info">Weather by City name</a>
+                    </li>
+                    <li><a href="geolocation.html" data-icon="location">Get Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--        Button to get Location-->
+        <div data-role="main" class="ui-content">
+
+            <button class="ui-btn ui-btn-b" id='geolocation' type="button" onclick="getLocations()">Get geoLocation</button>
+            <form>
+                <p id="demo"></p>
+            </form>
+        </div>
+        <div data-role="footer" id="footer" data-position="fixed">
+            <h1>&copy;Harshit Gindra</h1>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1>Welcome to Weather Station App.</h1>
+            <img src="img/Weather-Header.jpg" id="imgs" />
+            <!--        Start of nav bar-->
+            <div data-role="navbar" data-iconpos="bottom">
+                <!--            adding options in Nav Bar-->
+                <ul>
+                    <li><a href="index.html" data-icon="info">Weather by City name</a>
+                    </li>
+                    <li><a href="geolocation.html" data-icon="location">Get Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-field-contain">
+                <label for="StationName">Station Name: </label>
+                <input type="text" name="station1" id="station1" placeholder="Enter station name..">
+            </div>
+            <button class="ui-btn ui-btn-b" id="getForecast" type="button" onclick="fetchWeatherDetails()">Get Weather</button>
+        </div>
+        <p id="link"></p>
+        <table border="1" id="records_table" data-role="table" class="ui-responsive" data-mode="columntoggle">
+        </table>
+        <div data-role="footer" data-position="fixed">
+            <h1>&copy;Harshit Gindra</h1>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+
+</html>

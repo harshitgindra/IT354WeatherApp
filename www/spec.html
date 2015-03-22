@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <!-- jasmine source -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script type="text/javascript">
+        function tableCreate() {
+            var display;
+
+            display += "<thead><tr><th data-priority=\"1\">Date</th><th>Image</th><th data-priority=\"2\">Minimum Temperature</th><th data-priority=\"3\">Maximum Temperature</th><th data-priority=\"4\">Humidity</th><th data-priority=\"5\">Description</th></tr></thead>";
+            $('#records_table').append(display);
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="stage" style="display:none;"></div>
+    <button onclick="tableCreate()">create tabke</button>
+    <h2>hi</h2>
+    <h3>ki</h3>
+    <table id="records_table" data-role="table" data-mode="columntoggle" class="ui-responsive"></table>
+</body>
+
+</html>
